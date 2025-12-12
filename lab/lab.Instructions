@@ -1,0 +1,18 @@
+# Splunk DNS Log Analysis Lab Instructions
+
+## Objective
+- Ingest Zeek-style DNS logs into Splunk
+- Extract information such as DNS query types, source hosts, and most queried domains
+- Build SPL queries to investigate DNS activity
+- Detect anomalies such as failed resolutions and high-latency lookups
+
+## Lab Setup
+1. Ensure Splunk is installed and accessible.
+2. Download the `dns_logs.json` file from Haxcamp lab resources and place it in the `lab/` directory.
+3. Go to Splunk Web → **Settings > Add Data**
+4. Upload `dns_logs.json`
+5. Set Source type: `json` (or `zeek:dns`)
+6. Set Index: `main` or create `dns_lab`
+7. Verify indexing:
+   ```spl
+   index=dns_lab | head 5
