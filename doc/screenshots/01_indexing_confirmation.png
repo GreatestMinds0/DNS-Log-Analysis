@@ -1,0 +1,23 @@
+# Screenshots for Splunk DNS Lab
+
+This folder contains visual evidence of the lab tasks completed in Splunk.  
+
+## Contents
+
+1. **01_indexing_confirmation.png**  
+   - Shows that the `dns_logs.json` file was successfully indexed in Splunk.  
+
+2. **02_top_domains.png**  
+   - Bar chart of the most frequently queried domains (`Task 1`).  
+
+3. **03_top_client_ips.png**  
+   - List or chart of the most active user IPs generating DNS traffic (`Task 2`).  
+
+4. **04_query_type_breakdown.png**  
+   - Pie chart or table showing distribution of DNS query types (A, AAAA, CNAME, PTR) (`Task 3`).  
+
+## Notes
+
+- Screenshots should be taken from Splunk Web to demonstrate correct execution of tasks.  
+- File names should match the order of tasks for clarity.  
+- You can replace these placeholder images with your actual screenshots after completing the lab.
